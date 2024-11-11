@@ -2,15 +2,15 @@ from abc import ABC, abstractmethod
 
 class Sports(ABC):
     @abstractmethod
-    def practice_session(self):
+    def practice_session():
         pass
 
     @abstractmethod
-    def host_match(self):
+    def host_match():
         pass
 
     @abstractmethod
-    def award_ceremony(self):
+    def award_ceremony():
         pass
 
 
@@ -55,3 +55,6 @@ def organize_sport_event(sport: Sports):
 organize_sport_event(CollegeBasketball())
 organize_sport_event(CollegeFootball())
 organize_sport_event(CollegeSwimming())
+
+
+print(Sports.practice_session())
