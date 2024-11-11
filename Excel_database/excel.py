@@ -70,7 +70,7 @@ try:
         print("Insert Query:", insert_query)
 
         # Iterate over DataFrame rows as tuples
-        for row in df.itertuples(index=False, name=None):
+        for row in df.itertuples(index=True, name=None):
             try:
                 cursor.execute(insert_query, row)
             except Error as e:
